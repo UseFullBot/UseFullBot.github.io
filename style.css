@@ -128,10 +128,56 @@ section{
     margin-left: 40px;
     animation: Box 1s linear 0s 1 normal none;
     margin-top: 300px;
-    
+    transition: box-shadow 200ms ease 0s;
 }
 .form-box:hover{
   box-shadow: 0px 0px 50px #ff9900;
+}
+.joindiscord{
+  width: 200px;
+  align-items: center;
+  text-align: center;
+  background-color: #ff9900;
+  padding: 10px;
+  transition: background-color 200ms ease 0s;
+}
+.form-box a {
+  text-align: center;
+  display: block;
+  margin-top: 50px;
+}
+.joindiscord:hover{
+  background-color: #8a5300;
+}
+.spinner {
+  background-image: linear-gradient(rgb(255, 255, 255) 35%,#ff9900);
+  width: 50px;
+  height: 50px;
+  animation: spinning82341 1.7s linear infinite;
+  text-align: center;
+  border-radius: 50px;
+  filter: blur(1px);
+  box-shadow: 0px -5px 20px 0px rgb(255, 255, 255), 0px 5px 20px 0px #ff9900;
+  margin-top: 50px;
+}
+
+.spinner1 {
+  background-color: rgba(0, 0, 0, 0.678);
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  filter: blur(10px);
+  
+}
+.form-box p{
+  color: #fff;
+  margin: 20px;
+}
+.spinner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 h2{
@@ -165,6 +211,21 @@ body {
 #FAQ {
   background-color: #8a5300;
 }
+.cardfaq {
+  margin: 50px;
+  width: 40%;
+  height: 50%;
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;
+ }
+ .cardfaq p{
+  text-align: center;
+  align-items: center;
+  margin: 30px;
+  font-size: large;
+ }
 #services {
   background-color: #292929;
 }
@@ -227,5 +288,10 @@ body {
     -webkit-transform: translateZ(0);
             transform: translateZ(0);
     opacity: 1;
+  }
+}
+@keyframes spinning82341 {
+  to {
+    transform: rotate(360deg);
   }
 }
